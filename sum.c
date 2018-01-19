@@ -9,8 +9,14 @@ int main ()
   p = strtok (string," ");
   while (p!= NULL)
   {
-    sum = sum + atoi(p);
-    p = strtok (NULL, " ");
+    if(p>=48 && p<=57){
+	sum = sum + atoi(p);
+	p = strtok (NULL, " ");	
+    }
+    else{
+	printf ("0");
+	return 0;
+    }
   }
   printf ("%d\n",sum);
   return 0;
