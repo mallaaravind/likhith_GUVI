@@ -6,7 +6,7 @@ int main(void) {
 	int n, i;
 	scanf("%[^\n]", a);
 	scanf("%d", &n);
-	if(n<=0){
+	if(n<0){
 		printf("not applicable");
 		return 0;
 	}
